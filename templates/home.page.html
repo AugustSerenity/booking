@@ -1,17 +1,61 @@
 {{template "base" .}}
 
 {{define "content"}}
-    <div class = "container">
-        <div class = "row">
-            <div class = "col">
-                <h1>This is home page</h1>
-                <p>This is some text</p>
-                <p>
-                    {{index .StringMap "test"}}
-                </p>
+    <div id="main-carousel" class="carousel slide" data-ride="carousel">
 
-                <img src="/static/images/house.jpg" height="1330" width="2364">
+    <ol class="carousel-indicators">
+        <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#main-carousel" data-slide-to="1"></li>
+        <li data-target="#main-carousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/static/images/komnata.jpg" class="d-block w-100" alt="big room">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Conosci la misura.</p>
             </div>
         </div>
+        <div class="carousel-item">
+            <img src="/static/images/house_.jpg" class="d-block w-100" alt="house into mountin">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Venit hiems! Cura calidum locum!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="/static/images/krovat.jpg" class="d-block w-100" alt="bed">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Dormir mal.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center mt-4">Welcome to Fort Smythe Bed and Breakfast</h1>
+            <p>
+                Ну очень красивое место. Правда. Сядь, отдохни, перестань спешить и куда-то бежать. Здесь ты не найдешь ответов на свои вопросы.
+                Хорошего тебе дня! Ну очень красивое место. Правда. Сядь, отдохни, перестань спешить и куда-то бежать. Здесь ты не найдешь ответов на свои вопросы.
+                Хорошего тебе дня!Ну очень красивое место. Правда. Сядь, отдохни, перестань спешить и куда-то бежать. Здесь ты не найдешь ответов на свои вопросы.
+                Хорошего тебе дня!
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div class="col text-center">
+
+            <a href="/search-availability" class="btn btn-success">Make Reservation Now</a>
+
+        </div>
+    </div>
+
     </div>
 {{end}}

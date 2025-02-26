@@ -1,0 +1,64 @@
+{{template "base" .}}
+
+{{define "content"}}
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col">
+                <img src="/static/images/room_2.jpg"
+                     class="img-fluid img-thumbnail mx-auto d-block room-image" alt="room image">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center mt-4">Major's Suite</h1>
+                <p>
+                    В Самаре свыше 50-ти мест, которые так или иначе можно назвать гостиницами. Они рассеяны по всем районам и пригородам Самары. Все гостиницы Самары можно условно разделить на 3 группы: вокзальные гостиницы, городские гостиницы и мини-отели.
+                    Гостиницы Самары, располагающиеся в старом городе, как правило, размещены в домах, по праву называемых памятниками архитектуры. Так, здание самарской гостиницы «Азимут» в старом центре было построено в 1902 году (первоначально гостиница называлась «Метрополь», позже - «Националь», а в последние годы была включена в сеть отелей «Азимут»). Рядом, также в старинном доме, находится «Бристоль-Жигули», гостиница, существующая с 1897 года. Архитектурным ансамблем может гордиться и гостиничный комплекс «Европа», базирующийся частично в старом здании на улице Ульяновской, соединенном переходом с современным корпусом. Для ностальгирующих по советскому сервису приезжих - самарская гостиница «Колос» (бывший Дом колхозника). 22 номера, буфет с чаем и выпечкой, демпинговые цены.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col text-center">
+
+                <a id="check-availability-button" href="#!" class="btn btn-success">Check Availability</a>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+{{end}}
+
+{{define "js"}}
+<script>
+    document.getElementById("check-availability-button").addEventListener("click", function(){
+        let html = `
+    <form id="check-availability-form" action="" method="post" novalidate class="needs-validation">
+        <div class="form-row">
+            <div class="col">
+                <div class="form-row" id="reservation-dates-modal">
+                    <div class="col">
+                        <input disabled required class="form-control" type="text" name="start" id="start" placeholder="Arrival">
+                    </div>
+                    <div class="col">
+                        <input disabled required class="form-control" type="text" name="end" id="end" placeholder="Departure">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    `
+
+        attention.custom({msg: html, title: "Choose your dates"});
+    })
+</script>
+{{end}}
