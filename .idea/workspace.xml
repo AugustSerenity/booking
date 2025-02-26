@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87c44f42-dd7f-46ae-9701-44ea87ff5108" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html-source/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/html-source/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html-source/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/html-source/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html-source/generals.html" beforeDir="false" afterPath="$PROJECT_DIR$/html-source/generals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html-source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html-source/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html-source/majors.html" beforeDir="false" afterPath="$PROJECT_DIR$/html-source/majors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html-source/make-reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/html-source/make-reservation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html-source/reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/html-source/reservation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/make-reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/make-reservation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +53,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/html-source/static/css" />
       <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
