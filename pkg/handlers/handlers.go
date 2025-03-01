@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"fmt"
 	"github.com/AugustSerenity/booking/pkg/config"
 	"github.com/AugustSerenity/booking/pkg/models"
 	"github.com/AugustSerenity/booking/pkg/render"
@@ -71,7 +72,9 @@ func (m *Repository) Availability(w http.ResponseWriter, r *http.Request) {
 
 // PostAvailability renders the search availability page
 func (m *Repository) PostAvailability(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Posted to search Availability"))
+	start := r.Form.Get("start")
+	end := r.Form.Get("end")
+	w.Write([]byte(fmt.Sprintf("start date is %s and end date is %s", start, end)))
 }
 
 // Contact renders the search availability page
