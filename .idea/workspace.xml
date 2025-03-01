@@ -8,13 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/web/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/routes.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html-source/reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/html-source/reservation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-source/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/handlers/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/handlers/handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/render/render.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/render/render.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/generals.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/generals.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/majors.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/majors.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/make-reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/make-reservation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/search-availability.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search-availability.page.html" afterDir="false" />
     </list>
@@ -38,22 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/glebbelov/курсы_слив/Nice_try/booking",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/glebbelov/курсы_слив/Nice_try/booking&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
