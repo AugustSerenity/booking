@@ -3,9 +3,9 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/AugustSerenity/booking/pkg/config"
-	"github.com/AugustSerenity/booking/pkg/models"
-	"github.com/AugustSerenity/booking/pkg/render"
+	"github.com/AugustSerenity/booking/internal/config"
+	"github.com/AugustSerenity/booking/internal/models"
+	"github.com/AugustSerenity/booking/internal/render"
 	"log"
 	"net/http"
 )
@@ -95,7 +95,7 @@ func (m *Repository) AvailabilityJSON(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Println(err)
 	}
-	
+
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(out)
 }

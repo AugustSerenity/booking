@@ -3,8 +3,8 @@ package render
 import (
 	"bytes"
 	"fmt"
-	"github.com/AugustSerenity/booking/pkg/config"
-	"github.com/AugustSerenity/booking/pkg/models"
+	"github.com/AugustSerenity/booking/internal/config"
+	"github.com/AugustSerenity/booking/internal/models"
 	"github.com/justinas/nosurf"
 	"html/template"
 	"log"

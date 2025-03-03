@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/AugustSerenity/booking/pkg/config"
-	"github.com/AugustSerenity/booking/pkg/handlers"
-	"github.com/AugustSerenity/booking/pkg/render"
+	"github.com/AugustSerenity/booking/internal/config"
+	"github.com/AugustSerenity/booking/internal/handlers"
+	"github.com/AugustSerenity/booking/internal/render"
 	"github.com/alexedwards/scs/v2"
 	"log"
 	"net/http"

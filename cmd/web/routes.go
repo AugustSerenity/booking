@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/AugustSerenity/booking/pkg/config"
-	"github.com/AugustSerenity/booking/pkg/handlers"
+	"github.com/AugustSerenity/booking/internal/config"
+	"github.com/AugustSerenity/booking/internal/handlers"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"net/http"
