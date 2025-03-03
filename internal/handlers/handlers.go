@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/AugustSerenity/booking/internal/config"
+	"github.com/AugustSerenity/booking/internal/forms"
 	"github.com/AugustSerenity/booking/internal/models"
 	"github.com/AugustSerenity/booking/internal/render"
 	"log"
@@ -54,7 +55,13 @@ func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
 
 // Reservation renders is make a reservation page and displays form
 func (m *Repository) Reservation(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, r, "make-reservation.html", &models.TemplateData{})
+	render.RenderTemplate(w, r, "make-reservation.html", &models.TemplateData{
+		Form: forms.New(nil)})
+}
+
+// PostReservation handles the posting of a reservation form
+func (m *Repository) PostReservation(w http.ResponseWriter, r *http.Request) {
+
 }
 
 // Generals renders the room page
