@@ -6,21 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="87c44f42-dd7f-46ae-9701-44ea87ff5108" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-source/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-source/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-source/generals.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-source/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-source/majors.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-source/reservation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-source/static/images/house_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-source/static/images/komnata.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-source/static/images/krovat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-source/static/images/prosto.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html-source/static/images/room_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/forms/forms.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/forms/forms.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/handlers/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/handlers/handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/render/render.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/render.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/make-reservation.gohtml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/make-reservation.page.gohtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/make-reservation.page.gohtml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/make-reservation.page.gohtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
