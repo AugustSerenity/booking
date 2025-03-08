@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="87c44f42-dd7f-46ae-9701-44ea87ff5108" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/handlers/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/handlers/handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/render/render.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/render.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.layout.gohtml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.layout.gohtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/web/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +38,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultGoTemplateProperty": "Go File",
+    "Go Test.TestNoSurf in github.com/AugustSerenity/booking/cmd/web.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -61,6 +60,25 @@
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/html-source/static/css" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestNoSurf in github.com/AugustSerenity/booking/cmd/web" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="booking" />
+      <working_directory value="$PROJECT_DIR$/cmd/web" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/AugustSerenity/booking/cmd/web" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestNoSurf\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestNoSurf in github.com/AugustSerenity/booking/cmd/web" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
