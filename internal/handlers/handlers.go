@@ -39,6 +39,7 @@ func NewHandlers(r *Repository) {
 
 // Home is the home page handler
 func (m *Repository) Home(w http.ResponseWriter, r *http.Request) {
+	//m.DB.AllUsers()
 	render.RenderTemplate(w, r, "home.page.gohtml", &models.TemplateData{})
 }
 
