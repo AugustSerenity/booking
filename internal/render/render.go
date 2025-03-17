@@ -4,12 +4,13 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/AugustSerenity/booking/internal/config"
-	"github.com/AugustSerenity/booking/internal/models"
-	"github.com/justinas/nosurf"
 	"html/template"
 	"net/http"
 	"path/filepath"
+
+	"github.com/AugustSerenity/booking/internal/config"
+	"github.com/AugustSerenity/booking/internal/models"
+	"github.com/justinas/nosurf"
 )
 
 var functions = template.FuncMap{}
@@ -18,7 +19,8 @@ var pathToTemplates = "./templates"
 // NewTemplate sets the config for the template pages
 var app *config.AppConfig
 
-func NewTemplate(a *config.AppConfig) {
+// NewRenderer sets the config for the template package
+func NewRenderer(a *config.AppConfig) {
 	app = a
 }
 
@@ -31,8 +33,8 @@ func AddDefaultData(td *models.TemplateData, r *http.Request) *models.TemplateDa
 
 }
 
-// RenderTemplate render template using html/template
-func RenderTemplate(w http.ResponseWriter, r *http.Request, gotmpl string, td *models.TemplateData) error {
+// Template render template using html/template
+func Template(w http.ResponseWriter, r *http.Request, gotmpl string, td *models.TemplateData) error {
 
 	var tc map[string]*template.Template
 	if app.UseCache {
