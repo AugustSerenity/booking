@@ -53,7 +53,7 @@ func testDB(d *sql.DB) error {
 
 // NewDatabase creates new database for the application
 func NewDatabase(dsn string) (*sql.DB, error) {
-	db, err := sql.Open("postgres", dsn)
+	db, err := sql.Open("pgx", dsn)
 	if err != nil {
 		return nil, err
 	}

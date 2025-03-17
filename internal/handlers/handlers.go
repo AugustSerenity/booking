@@ -3,12 +3,16 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
+	"net/http"
+
 	"github.com/AugustSerenity/booking/internal/config"
+	"github.com/AugustSerenity/booking/internal/driver"
 	"github.com/AugustSerenity/booking/internal/forms"
 	"github.com/AugustSerenity/booking/internal/helpers"
 	"github.com/AugustSerenity/booking/internal/models"
 	"github.com/AugustSerenity/booking/internal/render"
-	"net/http"
+	"github.com/AugustSerenity/booking/internal/repository"
+	"github.com/AugustSerenity/booking/internal/repository/dbrepo"
 )
 
 // Repo the Repository used by the handlers
@@ -17,12 +21,14 @@ var Repo *Repository
 // Repository is repository type
 type Repository struct {
 	App *config.AppConfig
+	DB  repository.DatabaseRepo
 }
 
 // NewRepo creates a new repository
-func NewRepo(a *config.AppConfig) *Repository {
+func NewRepo(a *config.AppConfig, db *driver.DB) *Repository {
 	return &Repository{
 		App: a,
+		DB:  dbrepo.NewPostgresRepo(db.SQL, a),
 	}
 }
 
