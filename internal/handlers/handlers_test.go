@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
@@ -291,7 +292,7 @@ func TestRepository_PostReservation(t *testing.T) {
 	reqBody = fmt.Sprintf("%s&%s", reqBody, "last_name=Pops")
 	reqBody = fmt.Sprintf("%s&%s", reqBody, "email=invalid")
 	reqBody = fmt.Sprintf("%s&%s", reqBody, "phone=777777")
-	reqBody = fmt.Sprintf("%s&%s", reqBody, "room_id=invalid")
+	reqBody = fmt.Sprintf("%s&%s", reqBody, "room_id=2")
 
 	req, _ = http.NewRequest("POST", "/make-reservation", strings.NewReader(reqBody))
 
@@ -309,6 +310,38 @@ func TestRepository_PostReservation(t *testing.T) {
 		t.Errorf("PostReservation handler return wrong response code for invalid data: got %d, wanted %d", rr.Code, http.StatusTemporaryRedirect)
 	}
 
+}
+
+func TestRepository_AvalabilityJSON(t *testing.T) {
+	// first case: rooms are not available
+	reqBody := "start=2040-01-01"
+	reqBody = fmt.Sprintf("%s&%s", reqBody, "end_date=2040-01-02")
+	reqBody = fmt.Sprintf("%s&%s", reqBody, "room_id=1")
+
+	// create request
+	req, _ := http.NewRequest("POST", "/search-availability-json", strings.NewReader(reqBody))
+
+	// get context whit session
+	ctx := getCtx(req)
+	req = req.WithContext(ctx)
+
+	// set the request header
+	req.Header.Set("Content-Type", "x-www-form-urlencoded")
+
+	// make handler func
+	handler := http.HandlerFunc(Repo.AvailabilityJSON)
+
+	// get response recorder
+	rr := httptest.NewRecorder()
+
+	// make request to our handler
+	handler.ServeHTTP(rr, req)
+
+	var j jsonResponse
+	err := json.Unmarshal([]byte(rr.Body.String()), &j)
+	if err != nil {
+		t.Error("failed to parse json")
+	}
 }
 
 func getCtx(req *http.Request) context.Context {
