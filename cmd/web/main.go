@@ -25,12 +25,25 @@ var infoLog *log.Logger
 var errorLog *log.Logger
 
 func main() {
-
 	db, err := run()
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer db.SQL.Close()
+
+	defer close(app.MailChan)
+
+	fmt.Println("Starting mail listener...")
+	listenForMail()
+
+	// msg := models.MailData{
+	// 	To:      "Jija@pot.com",
+	// 	From:    "PikaPika@chy.com",
+	// 	Subject: "some subject",
+	// 	Content: "",
+	// }
+
+	// app.MailChan <- msg
 
 	fmt.Println(fmt.Sprintf("Application started on port %s", numberPort))
 
@@ -44,11 +57,14 @@ func main() {
 }
 
 func run() (*driver.DB, error) {
-
+	//what ama going to put into the session
 	gob.Register(models.Reservation{})
 	gob.Register(models.User{})
 	gob.Register(models.Room{})
 	gob.Register(models.Restriction{})
+
+	mailChan := make(chan models.MailData)
+	app.MailChan = mailChan
 
 	// change this to true in production
 	app.InProduction = false
