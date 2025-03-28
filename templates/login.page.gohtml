@@ -8,7 +8,7 @@
 
                 <form>
                     <div class="form-group mt-3">
-                        <label for="email">Email:</label>
+                        <label for="email">Email</label>
                         {{with .Form.Errors.Get "email"}}
                             <label class="text-danger">{{.}}</label>
                         {{end}}
@@ -18,7 +18,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="password">Password:</label>
+                        <label for="password">Password</label>
                         {{with .Form.Errors.Get "password"}}
                             <label class="text-danger">{{.}}</label>
                         {{end}}
