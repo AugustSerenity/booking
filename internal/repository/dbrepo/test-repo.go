@@ -63,3 +63,11 @@ func (m *testDBRepo) AllReservations() ([]models.Reservation, error) {
 
 	return reservations, nil
 }
+
+// AllNewReservations returns of slice all reservations
+func (m *testDBRepo) AllNewReservations() ([]models.Reservation, error) {
+
+	var reservations []models.Reservation
+
+	return reservations, nil
+}
